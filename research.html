@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="your description goes here" />
+	<meta name="keywords" content="your,keywords,goes,here" />
+	<meta name="author" content="Your Name" />
+	<link rel="stylesheet" type="text/css" href="andreas02.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
+	<title>Konstantinos' Research</title>
+</head>
+
+<body>
+
+<div id="container">
+	<div id="logo">
+		<h1><a href="index.html">Konstantinos Gatsis</a></h1>
+		<p> </p>
+	</div>
+
+	<div id="navitabs">
+		<h2 class="hide">Sample navigation menu:</h2>
+		<a class="navitab" href="index.html">Home</a><span class="hide"> | </span>
+		<a class="activenavitab" href="research.html">Research</a><span class="hide"> | </span>
+		<a class="navitab" href="publications.html">Publications</a><span class="hide"> | </span>
+		<a class="navitab" href="teaching.html">Teaching</a><span class="hide"> | </span>
+		<!-- <a class="navitab" href="coursework.html">Coursework</a><span class="hide"> | </span> -->
+		<a class="navitab" href="personal.html">Personal</a><span class="hide"> | </span>
+	</div>
+	
+	
+
+	<div id="main">
+	<br>
+	<figure style="float:right; 
+	 margin:0 0px 5px 15px; 
+	 padding: 10px;
+	text-align: justify;">
+    <img height="200" width="330" src="research.jpg" alt="" title="" > 
+    <figcaption>
+	<strong> </strong> 
+	
+	</figcaption>
+	</figure>
+
+<script type="text/javascript">
+    <!--
+    function toggleAbstract(divid) {
+      var x = document.getElementById(divid);
+      if (x.style.display === "none") {
+          x.style.display = "block";
+      } else {
+          x.style.display = "none";
+      }
+    }
+    -->
+  </script> 
+  
+	
+	
+			
+	
+	<p>My research focuses on enabling <b>safe, secure, and autonomous applications in the Internet-of-Things by developing novel control, learning, and optimization tools</b>. 
+The  Internet-of-Things is a multi-device system whose sensing, processing, learning, and actuation capabilities are joined by the availability of wireless communication. 
+These connected communities of devices are in close interaction with the physical world as they collect data signals from sensors, learn and adapt to disturbances, coordinate, and actuate back physical inputs in an autonomous closed-loop fashion.
+Application domains include smart transportation systems involving self-driving cars and vehicle-to-vehicle coordination, industrial automation and robotics, monitoring of smart infrastructures, smart agricultural systems, and multi-agent military operations.
+These applications offer a unique potential for greater economic and social impact, and also give rise to new fundamental research drives:</p>
+<!--<p> 
+		&bull;A new interface arises at the intersection of communication and autonomous systems by the expansion of next generation wireless communication standards (5G) and there is a need to understand the fundamental design principles for wireless autonomous systems.
+	<br>
+		&bull;The Internet-of-Things is a large-scale community of data-centered agents in interaction with the physical world, and there is a need to establish the foundations of Machine Learning and Data Science in this space.
+	<br>
+		&bull; With increasing connectivity there is also an increasing responsibility for security and privacy with respect to the physical counterparts of these systems extending beyond the cyber-domain.
+</p>-->
+<br>
+
+<p><b><a href="javascript:toggleAbstract('Drive1')"> <font color="blue">Drive 1: Autonomous Systems in the 5G Wireless Era</font></a></b></p>
+			
+            <div id="Drive1" style="display:none">
+            <p>
+The new generation of wireless communication standards (5G) and the Internet-of-Things (IoT) will immerse wireless communication in systems that interact with the physical world. 
+Examples range from vehicle-to-vehicle communication for autonomous driving, to industrial robotics, and smart agriculture. 
+These applications will be enabled by separate developments in low-latency high-reliability communication, massive connections between low-power devices, and increased data rates. 
+My research focus in this area is in developing the fundamental design tools for this new emerging engineering space. The highlight of my approach is the definition of novel <b>interfaces</b> between communication and control that will permit appropriate control-communication co-designs.
+My contributions in this area are:
+</p>
+<p>
+		&bull;
+<b>Wireless Low-Power Control Systems.</b> Low-power devices are necessary in monitoring and control applications where recharging is not readily available but on the other hand they pose a threat to performance and safety guarantees. 
+My contribution has been on defining an interface between these conflicting objectives. I examined the optimal power allocation that minimizes jointly control performance and power expenditures <a href="./papers/GatsisEtal_TAC14.pdf">(link)</a>. The novelty of this characterization is its cross-cutting nature; only when the plant deviates from the desired operating point, or when the channel conditions become less favorable, does the sensor need to increase its transmit power to communicate and close the loop more reliably. This is a paradigm shift from current approaches where control and communication design concerns are separated. 
+<br>
+		&bull;
+<b>Spectrum Management for Connected Control Systems.</b> Managing the available spectrum resources among multiple applications requesting access is a critical component of future IoT systems. My contribution in <a href="./papers/GatsisEtal_TAC15.pdf">(link)</a> is a new interface for scheduling control systems. 
+I proved that the optimal scheduler dynamically grants access to the best system according to a measure of their control needs and channel conditions.
+More importantly I showed that this simple rule is able to guarantee desired control performance for each system in the overall architecture.
+In contrast to common periodic scheduling rules, here control systems are not decoupled across time, but decoupled across channel and control system states. 
+I also extended this framework to the challenging problem of decentralized channel access subject to interference <a href="ttp://arxiv.org/pdf/1605.00627v1.pdf">(link)</a>. In collaboration with Intel this control-aware scheduling approach is <b>experimentally evaluated in the upcoming IEEE 802.11ax protocol</b> and it is shown that it can <b>increase the number of supported control tasks by 50%</b> even for tasks with tight performance requirements <a href="https://arxiv.org/pdf/1811.00409.pdf">(link)</a>.
+</p>
+<br>
+
+<p><b><font color="blue">&#8680; Future research agenda</font></b></p>
+
+<p> 
+		&bull; 
+		<b>Low-latency High-Reliability Autonomous Systems.</b> Time-critical autonomous systems require low-latency information transfers for timely and accurate reaction to physical disturbances. This is a significant challenge for current communication networks primarily designed to maximize throughput. My goal is to explore the design interfaces between autonomy and latency in order to develop both novel fast autonomy-aware communication algorithms as well as latency-aware control algorithms. This direction will explore adapting different layers of the communication stack to variations in latency and reliability requirements of autonomous systems over time and space. My initial efforts in this area have been on defining fundamental latency-reliability tradeoffs for state estimation from a channel coding perspective <a href="https://arxiv.org/pdf/1810.11831.pdf">(link)</a>. 
+
+
+<br>
+&bull; <b>Scalable IoT Monitoring and Control.</b>
+Massive numbers of connected devices will enable new applications but at the same time will require new principles for scalable design and operation. Centralized solutions become impractical and computationally intensive. 
+A particular challenge I will address is development of decentralized algorithms to allocate resources across large number of devices, across geographic locations, and across time, exploiting system state information available locally and limiting the need for maintaining global information. Control and monitoring over massive IoT deployments is also an unexplored topic,
+as is the relationship with network layer aspects, for example latency introduced by massive communication. 
+I will consider hierarchical control abstractions at different scales to separate high-level long-term planning from low-level short-time actions and with minimal interaction between scales. 
+</p>
+<hr>
+
+</div>
+			
+
+
+<br>
+
+<p><b><a href="javascript:toggleAbstract('Drive2')"> <font color="blue">Drive 2: Data Science and Learning for Autonomous Systems and Control</font></a></b></p>
+			
+            <div id="Drive2" style="display:none">
+
+<p>The Interent-of-Things is naturally organized around data, collected by deployed sensors in the form of physical signals, processed by edge computing, and used to make decisions fed back into the system as actions. 
+This data-centric perspective creates a unique opportunity for not only exploring existing learning tools within this context but also defining new data science principles for autonomous systems. 
+The <a href="https://kgatsis.github.io/learning_for_control_workshop_CDC2018/">Workshop on Learning for Control</a> which I am co-organizing in the upcoming IEEE Conf. on Decision and Control, December 2018 explores this topic.
+My contributions in this new space are:
+<br>&bull;<b>Learning Resource Allocations for Wireless Autonomous Systems.</b> As IoT systems become more complex and large scale, they operate over communication mediums that are only partly known, hard to model due to interferences, or time-varying. Model-based designs are of limited scope, and instead a sequence of channel quality measurements represent data over which to optimize performance. In particular I examined the problem of learning transmit power allocations <a href="https://arxiv.org/pdf/1803.01078.pdf">(link)</a> and scheduling <a href="./papers/GatsisEtal_TAC15.pdf">(link)</a> subject to desired control performance requirements and showed that this can be cast as a statistical learning problem. This is important because standard machine learning algorithms, for example stochastic gradient descent, can now be used for allocating resources online to optimize control performance for these systems.
+<br>&bull;<b>Sample Complexity for Control Over Unknown Communication Networks.</b>
+A further key challenge of data-driven designs is the characterization of the number of samples required to determine with accuracy the safety or stability of the operation and level of performance. I analyzed the sample complexity of such questions (CDC 2018 to appear) and I showed for the first time that the number of samples is fundamentally dependent on the relationship between the physical system dynamics and the underlying communication channel quality. This approach illustrates how important sample complexity limitations arise when the physical system dynamics change at a rate comparable to the communication error rate.
+</p>
+
+<br>
+
+<p><b><font color="blue">&#8680; Future research agenda</font></b></p>
+<p> 
+&bull;<b>Learning to Satisfy Safety Constraints.</b> When data-driven components are deployed to interact with the physical world within an autonomous system with limited human intervention, meeting safety and operational constraints is in the spotlight. This is in contrast to prevalent learning approaches that try to optimize a single objective, for example minimizing prediction errors in machine learning or maximizing rewards in reinforcement learning. At the same time control theory techniques are traditionally model-driven and their application to data-driven components is still in early stages.
+My goal is to develop fundamental principles and interfaces between data-based designs and model-based designs from the perspective of safety and satisfying desired constraints. 
+Fundamental challenges include determining statistical safety guarantees even when the number of data samples is limited or adversarially corrupted. 
+<br>&bull;<b>Managing an Internet of Learning Agents.</b>
+The prevalent machine learning paradigm where large amounts of data are processed with powerful computing in a centralized fashion needs to be redirected towards an Internet of learning agents collecting and processing local sets of data using local or edge computation.
+From a system operation point of view, we need systematic tools to select agents to solve a given learning task taking into account what algorithms they use, their biases and error profiles, and underlying communication and computation infrastructure.
+When interacting with dynamical processes I will also explore computationally efficient distributed approaches to solve multi-agent reinforcement learning problems.
+</p>
+<hr>
+
+</div>
+
+<br>
+
+<p><b><a href="javascript:toggleAbstract('Drive3')"> <font color="blue">Drive 3: Secure and Resilient Internet-of-Things</font></a></b></p>
+			
+            <div id="Drive3" style="display:none">
+
+
+<p>While connectivity is a driver for the Internet-of-Things, it also opens up new vulnerabilities. Gaining unauthorized access to physical signal measurements or physical system inputs can endanger smart transportation applications, industrial production lines, or home privacy.
+Connected IoT systems need to be secure by design. 
+My approach in this research thrust is to explore new privacy and security definitions tied to the characteristics of connected monitoring and control tasks, and develop novel associated countermeasures. My contributions in this area are:
+</p>
+<p> 
+		&bull;
+		<b>Secrecy for State Estimation in the Presence of Eavesdroppers.</b>
+A fundamental vulnerability in wireless cyber-physical systems is eavesdropping attacks due to the broadcast nature of the wireless medium, where unauthorized agents may intercept packets and gain access to critical system information.
+This is a passive attack that cannot be easily detected and hence requires proactive measures.
+I have developed novel communication schemes for state estimation with secrecy guarantees exploiting the dynamical model of the physical system <a href="https://arxiv.org/pdf/1709.04530.pdf">(link)</a>. These are control-theoretic countermeasures rendering the private system state unobservable to even powerful eavesdroppers that can intercept almost all transmitted messages. This method can be used alongside other orthogonal security techniques, for example encryption mechanisms that rely on secret keys. 
+
+<br>&bull;<b>Cryptography for Cloud-based Estimation and Control.</b> Cryptographic tools are a general purpose solution to protect data from unauthorized users, and tailoring them to specific IoT applications, such as monitoring or control from encrypted sensor measurements, opens up new opportunities to strengthen system security. I have illustrated this by applying  partially homomorphic encryption in quadratic optimization solvers over encrypted data <a href="https://arxiv.org/pdf/1809.02267.pdf">(link)</a>. This in an encrypted projected gradient descent algorithm that enjoys strong cryptographic security guarantees, i.e., a cloud server solves a requested optimization problem over encrypted data without the ability to decrypt them. 
+
+</p>
+<br>
+<p><b><font color="blue">&#8680; Future research agenda</font></b></p>
+<p> 
+&bull;<b>Resilient Connected Autonomous Systems.</b> Resiliency, a measure of the amount of failures or attacks a system may withstand, is indispensable in IoT systems especially as they become complex and large-scale. 
+My goal in this thrust is to quantify metrics of resilient estimation and control performance in connected autonomous systems  
+and design algorithms to mitigate the impact of attacks. 
+The security countermeasures also need to be computationally efficient and scale even with large number of potential attack vectors.
+Initial efforts towards these goals have been on large scale sensor management subject to denial-of-service attacks using the mathematical tool of submodularity <a href="https://arxiv.org/pdf/1703.07280.pdf">(link)</a>. 
+Resiliency is also cutting across themes in this statement including, for example, secure low-latency high-reliability control systems, and secure learning for autonomous systems.
+
+</p>
+<hr>
+
+</div>
+
+
+<br>
+<p><b>Application Domains</b></p>
+<figure style="float:left; 
+	 margin:0 0px 5px 15px; 
+	 padding: 10px;
+	text-align: justify;">
+    <img width="250"   src="platooning.jpg" alt="" title="" > 
+    <figcaption>
+	<strong> </strong> 
+	
+	</figcaption>
+	</figure>
+<p> 
+<br>
+<br>
+
+		 <p>&bull; <b>Transportation.</b>
+The low-latency high-reliability control and communication developments of Drive 1 are of particular interest to vehicle-to-vehicle and vehicle-to-infrastructure connectivity.
+My plan will be to enable self-driving cars and platooning trucks to exchange information about current state, velocity, intended directions, or observed obstacles with the goal of improving fuel efficiency and road utilization while at the same time maintaining strict safe spaces even at high speeds. </p>
+<br>
+<br>
+<br>
+<br>
+
+<figure style="float:left; 
+	 margin:0 0px 5px 15px; 
+	 padding: 10px;
+	text-align: justify;">
+    <img width="250"  src="Robotics.jpg" alt="" title="" > 
+    <figcaption>
+	<strong> </strong> 
+	
+	</figcaption>
+	</figure>
+
+<br>
+<br>
+		 <p>&bull; <b>Robotics.</b> Mobile agents in partially known environments must reliably collect valuable information with as few samples as possible and maintain safety and operational constraints at all times. I plan to evaluate the safe autonomy and interconnected learning of Drive 2 in these scenarios. Furthermore, I plan to consider mobile agents in military operations that must accomplish tasks even under adversarial communication interference and data manipulation, incorporating resiliency developed in Drive 3.</p>
+		<br>
+<br>
+<br>
+
+<figure style="float:left; 
+	 margin:0px 0px 5px 15px; 
+	 padding: 10px;
+	text-align: justify;">
+    <img width="250"   src="future_city.jpg" alt="" title="" > 
+    <figcaption>
+	<strong> </strong> 
+	
+	</figcaption>
+	</figure>
+		<br>
+		<p>&bull; <b>Smart Infrastructures.</b>
+Future smart infrastructures will be instrumented with large numbers of wireless devices. I plan to evaluate the developments of Drive 1, especially in terms of scalability, in applications including monitoring of built environments, smart cities, environmental processes and agriculture systems. My goal will be to illustrate how connectivity improves performance metrics such as productivity and quality of monitoring.</p>
+
+</p>		
+		
+	
+	<br>
+	
+	</div>
+
+
+    
+	<div id="footer">
+		<p><strong>&copy; 2013 <a href="index.html">Konstantinos Gatsis</a></strong> | <strong>Contact:</strong> kgatsis at seas.upenn.edu | Template design by <a href="http://andreasviklund.com/">Andreas Viklund</a> </p>
+	</div>
+
+</div>
+</body>
+</html>
