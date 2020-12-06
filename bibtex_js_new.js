@@ -370,7 +370,7 @@ function BibtexDisplay() {
 
 function bibtex_js_draw() {
   $(".bibtex_template").hide();
- 
+ (new BibtexDisplay()).displayBibtex($("#bibtex_input_preprints").val(), $("#bibtex_display_preprints"));
  (new BibtexDisplay()).displayBibtex($("#bibtex_input_journal").val(), $("#bibtex_display_journal"));
  (new BibtexDisplay()).displayBibtex($("#bibtex_input_journal_in_preparation").val(), $("#bibtex_display_journal_in_preparation"));
  (new BibtexDisplay()).displayBibtex($("#bibtex_input_conf").val(), $("#bibtex_display_conf"));
